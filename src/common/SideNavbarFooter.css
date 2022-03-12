@@ -1,0 +1,23 @@
+.side-navbar-footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: gray;
+}
+
+.side-navbar-footer:hover {
+  background-color: rgb(44, 44, 44);
+}
+
+.side-navbar-footer-icon {
+  padding: 5px;
+  padding-left: 10px;
+  color: red;
+}
+
+.side-navbar-footer-text {
+  padding: 5px;
+  color: red;
+}

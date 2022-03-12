@@ -1,10 +1,12 @@
 import "./App.css";
-import Header from "./common/Header.js";
+import SideNavbar from "./common/SideNavbar";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <div className="flex-container">
+        <SideNavbar />
+      </div>
     </div>
   );
 }

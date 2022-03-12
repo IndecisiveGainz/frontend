@@ -1,0 +1,33 @@
+.side-navbar-header {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: gray;
+}
+
+.side-navbar-header:hover {
+  cursor: pointer;
+}
+
+.side-navbar-header-logo {
+  margin: auto;
+  text-align: center;
+}
+
+.side-navbar-header-logo img {
+  height: 50px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.side-navbar-header-text {
+  text-align: center;
+}
+
+.side-navbar-header-text p {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+  padding: 5px;
+  color: red;
+  margin: 0;
+}
