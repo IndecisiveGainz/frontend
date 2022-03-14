@@ -36,24 +36,30 @@ class SideNavbar extends React.Component {
             name={HomeComponent}
             icon={IoHomeOutline}
             expanded={this.state.expanded}
+            isSelected={this.props.currentSelectedComponent === HomeComponent}
             setSelectedComponent={this.props.setSelectedComponent}
           />
           <SideNavbarItem
             name={CreateComponent}
             icon={BsPlusSquare}
             expanded={this.state.expanded}
+            isSelected={this.props.currentSelectedComponent === CreateComponent}
             setSelectedComponent={this.props.setSelectedComponent}
           />
           <SideNavbarItem
             name={TrackComponent}
             icon={BsPencilSquare}
             expanded={this.state.expanded}
+            isSelected={this.props.currentSelectedComponent === TrackComponent}
             setSelectedComponent={this.props.setSelectedComponent}
           />
           <SideNavbarItem
             name={GenerateComponent}
             icon={FaCogs}
             expanded={this.state.expanded}
+            isSelected={
+              this.props.currentSelectedComponent === GenerateComponent
+            }
             setSelectedComponent={this.props.setSelectedComponent}
           />
         </ul>

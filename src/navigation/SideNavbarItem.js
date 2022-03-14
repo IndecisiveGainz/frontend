@@ -11,7 +11,11 @@ class SideNavbarItem extends React.Component {
     return (
       <li>
         <div
-          className="side-navbar-item flex-container"
+          className={
+            this.props.isSelected
+              ? "side-navbar-item-selected flex-container"
+              : "side-navbar-item flex-container"
+          }
           onClick={() => this.props.setSelectedComponent(this.props.name)}
         >
           <div className="flex-left vert-center side-navbar-icon">

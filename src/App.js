@@ -50,7 +50,10 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="flex-container">
-          <SideNavbar setSelectedComponent={this.setSelectedComponent} />
+          <SideNavbar
+            setSelectedComponent={this.setSelectedComponent}
+            currentSelectedComponent={this.state.currentComponent}
+          />
           {this.getSelectedComponent()}
         </div>
       </div>
