@@ -6,6 +6,12 @@ import { IoHomeOutline } from "react-icons/io5";
 import { BsPencilSquare, BsPlusSquare } from "react-icons/bs";
 import { FaCogs } from "react-icons/fa";
 import React from "react";
+import {
+  HomeComponent,
+  CreateComponent,
+  TrackComponent,
+  GenerateComponent,
+} from "./SideNavbarConstants";
 
 class SideNavbar extends React.Component {
   constructor(props) {
@@ -27,24 +33,28 @@ class SideNavbar extends React.Component {
         />
         <ul>
           <SideNavbarItem
-            name="Home"
+            name={HomeComponent}
             icon={IoHomeOutline}
             expanded={this.state.expanded}
+            setSelectedComponent={this.props.setSelectedComponent}
           />
           <SideNavbarItem
-            name="Create Exercise"
+            name={CreateComponent}
             icon={BsPlusSquare}
             expanded={this.state.expanded}
+            setSelectedComponent={this.props.setSelectedComponent}
           />
           <SideNavbarItem
-            name="Track Exercise"
+            name={TrackComponent}
             icon={BsPencilSquare}
             expanded={this.state.expanded}
+            setSelectedComponent={this.props.setSelectedComponent}
           />
           <SideNavbarItem
-            name="Generate Routine"
+            name={GenerateComponent}
             icon={FaCogs}
             expanded={this.state.expanded}
+            setSelectedComponent={this.props.setSelectedComponent}
           />
         </ul>
         <SideNavbarFooter expanded={this.state.expanded} />
