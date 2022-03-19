@@ -1,0 +1,11 @@
+.side-navbar {
+  background-color: black;
+  height: 100vh;
+  width: 200px;
+  position: relative;
+}
+
+.side-navbar ul {
+  list-style: none;
+  padding: 0;
+}

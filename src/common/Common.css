@@ -1,0 +1,24 @@
+.vert-center {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-left {
+  flex: 1;
+}
+
+.flex-right {
+  flex: 4;
+}
+
+.flex-top {
+  flex: 1;
+}
+
+.flex-bottom {
+  flex: 1;
+}
